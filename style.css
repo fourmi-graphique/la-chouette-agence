@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -1040,8 +1040,3 @@ h4 {
         text-align: center;
     }
 }
-
-
-
-
-/* nouveau site */
