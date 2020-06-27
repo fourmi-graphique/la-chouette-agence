@@ -42,7 +42,9 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence, entreprise web design Lyon" height="40" /></a>
+				<button class="navbar-brand bouton">
+					<a href="index.html" tabindex="0"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence, entreprise web design Lyon" /></a>
+				</button>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -50,13 +52,13 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="index.html">Accueil</a></button>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="contact.html">Contact</a></button>
 					</li>
 					<li>
-						<a href="blog.html">Blog</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="blog.html">Blog</a></button>
 					</li>
 				</ul>
 			</div>
@@ -64,6 +66,10 @@
 	</div>
 </header>
 <!-- bloc-0 END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" tabindex="0" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 
 <!-- bloc-1-presentation -->
 <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
@@ -75,7 +81,9 @@
 					La chouette agence.
 				</h1>
 				<div class="text-center">
-					<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+					<button class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero" tabindex="0">
+						<a href="contact.html">Contact</a>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -137,7 +145,9 @@
 				Pour des news toutes fraîches sur votre entreprise de web design Lyonnaise <br> Visitez notre blog !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="blog.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Blog</a>
+				<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">
+					<a href="blog.html">Blog</a>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -153,7 +163,11 @@
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 				</h2>
 				<p class="text-center white">
-					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a><br>
+					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
+					<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">
+						<a href="contact.html">Contactez notre équipe</a>
+					</button>
+					<br>
 				</p>
 			</div>
 		</div>
@@ -215,13 +229,15 @@
 
 <!-- bloc-5-cta -->
 <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
-	<div class="container bloc-lg">
+	<div class="container bloc-lg bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper">
 		<div class="row">
-			<h2 class="mg-md text-center tc-white">
+			<h3 class="mg-md text-center tc-white b-five">
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
-			</h2>
+			</h3>
 			<div class="col-sm-12 text-center">
-				<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0">
+					<a href="contact.html">Contact</a>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -233,7 +249,7 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center black">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
@@ -260,13 +276,16 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 partenaires">
-						<p>Nos partenaires</p>
+						<p>Nos partenaires :</p>
 						<ul>
 							<li><a href="photographe.com">Photographe.com</a></li>
 							<li><a href="graphiste.com">Graphiste.com</a></li>
 							<li><a href="openclassrooms.com">Openclassrooms.com</a></li>
 							<li><a href="malt.com">Malt.com</a></li>
 						</ul>		
+					</div>
+					<div class="col-md-12 mentions">
+						<a href="mentions.html">Mentions légales</a>
 					</div>
 				</div>
 			</div>

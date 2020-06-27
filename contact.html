@@ -5,7 +5,7 @@
     <meta name="keywords" content="entreprises web design Lyon, site web, site internet">
     <meta name="description" content="La chouette agence, Entreprise web design Lyon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="robots" content="index, follow">#
+	<meta name="robots" content="index, follow">
 	
 	<!-- Balise OG -->
 	<!-- Open Graph data -->
@@ -45,7 +45,9 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence, entreprise web design Lyon" height="40" /></a>
+				<button class="navbar-brand bouton">
+					<a href="index.html" tabindex="0"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence, entreprise web design Lyon" /></a>
+				</button>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -53,13 +55,13 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="index.html">Accueil</a></button>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="contact.html">Contact</a></button>
 					</li>
 					<li>
-						<a href="blog.html">Blog</a>
+						<button type="button" class="btn btn-default" tabindex="0"><a href="blog.html">Blog</a></button>
 					</li>
 				</ul>
 			</div>
@@ -68,15 +70,21 @@
 </header>
 <!-- bloc-0 END -->
 
+<!-- ScrollToTop Button -->
+<button>
+	<a class="bloc-button btn btn-d scrollToTop" tabindex="0" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+</button>
+<!-- ScrollToTop Button END-->
+
 <!-- bloc-6 -->
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
+				<h1 class="text-center hero-bloc-text tc-dark">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<p class="text-center mg-lg tc-dark tight-width-whitespace font_size">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -95,27 +103,31 @@
 					<div class="form-group">
 						<label>
 							Nom
+							<input id="name" class="form-control" required tabindex="0"/>
 						</label>
-						<input id="name" class="form-control" required />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
+							<input id="email" class="form-control" type="email" required tabindex="0"/>
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
+							<input class="form-control" type="email" required id="input_504" tabindex="0"/>
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+							<textarea id="message" class="form-control" rows="4" cols="50" required tabindex="0"></textarea>
+						</label>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" tabindex="0							">
 						Envoyer
 					</button>
 				</form>
@@ -130,17 +142,12 @@
 </div>
 <!-- bloc-7 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center black">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
