@@ -45,9 +45,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<button class="button_logo" tabindex="0">
-					<a href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la chouette agence, entreprise web design Lyon" /></a>
-				</button>
+				<button type="button" class="button_logo" tabindex="0" onclick="window.location.href = 'index.html';"><img src="img/la-chouette-agence.png" alt="Lien accueil logo noir et blanc, La chouette agence, entreprise web design Lyon "/></button>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -55,19 +53,13 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0">
-							<a href="index.html">Accueil</a>
-						</button>
+						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0" onclick="window.location.href = 'index.html';">Accueil</button>
 					</li>
 					<li>
-						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0">
-							<a href="contact.html">Contact</a>
-						</button>
+						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0" onclick="window.location.href = 'contact.html';">Contact</button>
 					</li>
 					<li>
-						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0">
-							<a href="blog.html">Blog</a>
-						</button>
+						<button type="button" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" tabindex="0" onclick="window.location.href = 'blog.html';">Blog</button>
 					</li>
 				</ul>
 			</div>
@@ -77,9 +69,7 @@
 <!-- bloc-0 END -->
 
 <!-- ScrollToTop Button -->
-<button>
-	<a class="bloc-button btn btn-d scrollToTop" tabindex="0" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-</button>
+<a class="bloc-button btn btn-d scrollToTop" tabindex="0" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 <!-- bloc-6 -->
@@ -105,7 +95,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1"novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
 						<label>
 							Nom
@@ -133,7 +123,7 @@
 							<textarea id="message" class="form-control" rows="4" cols="50" required tabindex="0"></textarea>
 						</label>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" tabindex="0							">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" tabindex="0">
 						Envoyer
 					</button>
 				</form>
